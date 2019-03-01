@@ -7,7 +7,7 @@ using CSharpDesignPattern;// we need acess to this namespace
 
 namespace Builder
 {
-    public abstract class BikeBuilder
+    public abstract class BikeBuilder//parent
     {
         //property of IBicycle called bicyle
         public abstract IBicycle Bicycle { get; }

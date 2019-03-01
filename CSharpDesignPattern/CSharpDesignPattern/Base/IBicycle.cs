@@ -10,6 +10,11 @@ namespace CSharpDesignPattern
     {
         IWheel GetWheel { get; }
         BikeColor ColorType { get; }
+
+        decimal price { get; }
         void paint(BikeColor color);
+        void cleanFrame();
+        void AirTire();
+        void TestRide();
     }
 }

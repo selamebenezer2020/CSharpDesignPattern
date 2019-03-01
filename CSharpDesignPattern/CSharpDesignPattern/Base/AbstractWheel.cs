@@ -32,6 +32,11 @@ namespace CSharpDesignPattern
             this._isWide = isWide;
         }
 
+        public override string ToString()
+        {
+            return this.GetType().Name + "with a wheel size of " + _size + "inches";
+        }
+
 
 
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpDesignPattern
 {
-    public class AbstractBike : IBicycle
+    public abstract class AbstractBike : IBicycle
     {
         private BikeColor _color;
         public IWheel _wheel;
@@ -27,6 +27,7 @@ namespace CSharpDesignPattern
 
             }
         }
+        public abstract decimal price { get; }
         public AbstractBike(BikeColor color, IWheel wheel)
         {
             this._wheel = wheel;
@@ -41,6 +42,21 @@ namespace CSharpDesignPattern
         public override string ToString()
         {
             return this.GetType().Name + "Bicyle color is " + _color;
+        }
+
+        public virtual void cleanFrame()
+        {
+            Console.WriteLine("cleaning Frame");
+        }
+
+        public virtual void AirTire()
+        {
+            Console.WriteLine("Airing up Tires");
+        }
+
+        public virtual void TestRide()
+        {
+            Console.WriteLine("Taking bike for a test Ride.....");
         }
     }
 }

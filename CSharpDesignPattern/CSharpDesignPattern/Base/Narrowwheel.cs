@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpDesignPattern.Base
+namespace CSharpDesignPattern
 {
-    public class Narrowwheel : AbstractWheel
+    public class Narrowheel : AbstractWheel
     {
-        public Narrowwheel(int size) : base(size, false)
+        public Narrowheel(int size) : base(size, false)
         {
 
         }
