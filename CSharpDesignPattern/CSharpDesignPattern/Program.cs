@@ -12,6 +12,7 @@ using Facade;
 using Iterator;
 using System.Collections;
 using Observer;
+using Visitor;
 
 namespace CSharpDesignPattern
 {
@@ -28,9 +29,16 @@ namespace CSharpDesignPattern
             // FacadePatternDemo();
             //IteratorPatternDemo();
             //IteratorPatternDemo2();
-            observerPatternDemo();
+            // observerPatternDemo();
+            VisitorPatternDemo();
 
+        }
 
+        private static void VisitorPatternDemo()
+        {
+            IWheel wheel = new Narrowheel(24);
+            wheel.AcceptVisitor(new WheelDiagnostics());
+            wheel.AcceptVisitor(new WheelInventory());
         }
         private static void observerPatternDemo()
         {
