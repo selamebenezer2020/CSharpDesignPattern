@@ -18,6 +18,8 @@ namespace CSharpDesignPattern
 {
     class Program
     {
+        public delegate void Tryon(string type);
+
         static void Main(string[] args)
         {
 
@@ -30,9 +32,11 @@ namespace CSharpDesignPattern
             //IteratorPatternDemo();
             //IteratorPatternDemo2();
             // observerPatternDemo();
-            VisitorPatternDemo();
+            // VisitorPatternDemo();
+
 
         }
+
 
         private static void VisitorPatternDemo()
         {
